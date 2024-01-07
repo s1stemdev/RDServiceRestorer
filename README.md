@@ -1,4 +1,4 @@
-# Descriprion
+# Description
 
 RDServiceRestorer is a CloudNet module allows to restore or wipe services by time without outside interference.
 
