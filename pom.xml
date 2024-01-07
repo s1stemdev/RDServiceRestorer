@@ -12,6 +12,60 @@
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
     </properties>
-    
+
+    <repositories>
+        <repository>
+            <id>cloudnet-snapshots</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
+    <!-- optional - you can also specify versions directly -->
+    <!-- optional - you can also specify versions directly -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>eu.cloudnetservice.cloudnet</groupId>
+                <artifactId>bom</artifactId>
+                <version>4.0.0-RC9-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>eu.cloudnetservice.cloudnet</groupId>
+            <artifactId>driver</artifactId>
+            <version>4.0.0-RC9-SNAPSHOT</version> <!-- only needed when bom is not used -->
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>eu.cloudnetservice.cloudnet</groupId>
+            <artifactId>node</artifactId>
+            <version>4.0.0-RC9-SNAPSHOT</version> <!-- only needed when bom is not used -->
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>eu.cloudnetservice.cloudnet</groupId>
+            <artifactId>common</artifactId>
+            <version>4.0.0-RC9-SNAPSHOT</version> <!-- only needed when bom is not used -->
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
 </project>

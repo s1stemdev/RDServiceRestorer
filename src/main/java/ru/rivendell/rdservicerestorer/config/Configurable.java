@@ -1,4 +1,7 @@
 package ru.rivendell.rdservicerestorer.config;
 
-public class Configurable {
+public abstract class Configurable {
+
+    public abstract String getName();
+
 }

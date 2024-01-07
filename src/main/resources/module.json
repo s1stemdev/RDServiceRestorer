@@ -1,0 +1,12 @@
+{
+  "runtimeModule": false,
+  "storesSensitiveData": true,
+  "main": "ru.rivendell.rdservicerestorer.ModuleMain",
+  "name": "${project.artifactId}",
+  "group": "ru.rivendell.rdservicerestorer",
+  "author": "systemdev_",
+  "version": "${project.version}",
+  "website": "shop.riven-dell.ru",
+  "description": "Restore you non-static services by time",
+  "minJavaVersionId": 17
+}
