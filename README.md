@@ -11,14 +11,14 @@ RDServiceRestorer is a CloudNet module allows to restore or wipe services by tim
 - Drop the file into your modules folder
 - Create module directory "RDServiceRestorer"
 - Create directory "restorers" in module directory
-- Put restorer configs in this folder
+- Put restorer configs in json format into this folder
 
 # Configuration
-"id" - unique id for the restorer
-"enabled" - should restorer works
-"removeFiles" - should service be created from template (Works only with static services)
-"tasks" - list of tasks, which could be restored
-"delay" - delay between restores by time
+- "id" - unique id for the restorer
+- "enabled" - should restorer works
+- "removeFiles" - should service be created from template (Works only with static services)
+- "tasks" - list of tasks, which could be restored
+- "delay" - delay between restores by time
 
 ## Example:
 ```
